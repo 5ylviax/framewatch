@@ -1,5 +1,6 @@
 #include <QApplication>
 #include <QLabel>
+#include <thread>
 
 int main(int argc, char* argv[])
 {

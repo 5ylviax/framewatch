@@ -55,3 +55,6 @@ recordings/
 # Logs
 logs/
 *.log
+
+NOTES.md
+BUILD.md
