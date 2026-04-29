@@ -1,0 +1,17 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug framewatch",
+      "type": "cppvsdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/build/debug/Framewatch.exe",
+      "args": [],
+      "cwd": "${workspaceFolder}/build/debug",
+      "console": "integratedTerminal",
+      "environment": [
+        { "name": "PATH", "value": "${workspaceFolder}/build/debug/vcpkg_installed/x64-windows/debug/bin;${env:PATH}" }
+      ]
+    }
+  ]
+}
