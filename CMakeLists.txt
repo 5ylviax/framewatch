@@ -12,8 +12,6 @@ find_package(Qt6 6.8 REQUIRED COMPONENTS Widgets)
 qt_standard_project_setup()
 qt_add_executable(Framewatch
     src/main.cpp
-    src/capture.cpp
-    src/capture.h
 )
 target_include_directories(Framewatch PRIVATE
     src
