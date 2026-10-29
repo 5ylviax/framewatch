@@ -14,16 +14,14 @@ After building, launch the exe any of these ways:
 
 ## Tech stack
 
-| Layer            | Tool                                            | Why                                            |
-|------------------|-------------------------------------------------|------------------------------------------------|
-| Language         | C++20                                           | Native, OS-level access, what I want to learn  |
-| Compiler         | MSVC 14.50 (Visual Studio 2026 Community)       | Required for Windows.Graphics.Capture and NVENC|
-| UI framework     | Qt 6.10.3 (Widgets)                             | Tray icon, settings window, threading helpers  |
-| Build system     | CMake 4.3                                       | Standard for modern cross-vendor C++           |
-| Build tool       | Ninja                                           | Fast incremental builds                        |
-| Package manager  | vcpkg (manifest mode)                           | For ffmpeg/opencv/tesseract    |
-| Editor           | Visual Studio Code                              | Lightweight, Microsoft-supported with CMake Tools |
-| Capture API      | Windows.Graphics.Capture (planned)              | Modern, low overhead, post-1809 Windows 10+    |
-| Encoder          | NVENC via FFmpeg (planned)                      | Hardware accelerated, NVIDIA GPU on this machine |
-| Computer vision  | OpenCV + Tesseract (planned)                    | Kill feed detection from captured frames       |
+| Layer            | Tool                                      |
+|------------------|-------------------------------------------|
+| Language         | C++20                                     |
+| Compiler         | MSVC (Visual Studio 2026)                 |
+| UI framework     | Qt 6.10.3 (Widgets)                       |
+| Build system     | CMake 4.3                                 |
+| Package manager  | vcpkg                                     |
+| Capture API      | Windows.Graphics.Capture                  |
+| Encoder          | NVENC via FFmpeg                          |
+| Computer vision  | OpenCV + Tesseract                        |
 
