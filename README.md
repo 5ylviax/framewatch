@@ -18,7 +18,7 @@ After building, launch the exe any of these ways:
 |------------------|-------------------------------------------|
 | Language         | C++20                                     |
 | Compiler         | MSVC (Visual Studio 2026)                 |
-| UI framework     | Qt 6.10.3 (Widgets)                       |
+| UI framework     | Qt 6.8.3 (Widgets)                        |
 | Build system     | CMake 4.3                                 |
 | Package manager  | vcpkg                                     |
 | Capture API      | Windows.Graphics.Capture                  |
