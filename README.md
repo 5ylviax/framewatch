@@ -8,6 +8,8 @@ In the future, Framewatch will also clip your games for you: a rolling replay
 buffer with automatic highlight detection, starting with Apex Legends and more
 games after. Zero ads. 
 
+![Framewatch showing the clip list with resolution filters next to a 4K Apex Legends clip playing](image/FrameWatch-desktop-application.png)
+
 ## Run
 From the terminal:
     ```bash 
