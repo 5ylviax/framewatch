@@ -7,7 +7,7 @@ set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTORCC ON)
 set(CMAKE_AUTOUIC ON)
 
-find_package(Qt6 6.12 REQUIRED COMPONENTS Widgets Multimedia MultimediaWidgets)
+find_package(Qt6 6.8 REQUIRED COMPONENTS Widgets Multimedia MultimediaWidgets)
 
 qt_standard_project_setup()
 qt_add_executable(Framewatch

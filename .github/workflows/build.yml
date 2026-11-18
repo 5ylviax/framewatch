@@ -20,7 +20,9 @@ jobs:
       - name: Install Qt
         uses: jurplel/install-qt-action@v4
         with:
-          version: '6.12.0'
+          # Keep in sync with the local dev Qt. aqtinstall 3.3.0 can't install
+          # Qt 6.11+ (Qt moved those to per-arch repo folders it doesn't know).
+          version: '6.8.3'
           arch: 'win64_msvc2022_64'
           modules: 'qtmultimedia'
           cache: true

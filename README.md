@@ -20,7 +20,7 @@ From the terminal:
 |------------------|-------------------------------------------|
 | Language         | C++20                                     |
 | Compiler         | MSVC               |
-| UI framework     | Qt 6.12.0 (Widgets, Multimedia)           |
+| UI framework     | Qt 6.8.3 (Widgets, Multimedia)            |
 | Build system     | CMake 4.3                                 |
 | Package manager  | vcpkg                                     |
 | Capture API      | Windows.Graphics.Capture                  |
