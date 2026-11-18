@@ -5,12 +5,13 @@
       "name": "Debug framewatch",
       "type": "cppvsdbg",
       "request": "launch",
+      "preLaunchTask": "CMake: build",
       "program": "${workspaceFolder}/build/debug/Framewatch.exe",
       "args": [],
       "cwd": "${workspaceFolder}/build/debug",
       "console": "integratedTerminal",
       "environment": [
-        { "name": "PATH", "value": "C:/Qt/6.8.3/msvc2022_64/bin;${workspaceFolder}/build/debug/vcpkg_installed/x64-windows/debug/bin;${env:PATH}" }
+        { "name": "PATH", "value": "C:/Qt/6.12.0/msvc2022_64/bin;${workspaceFolder}/build/debug/vcpkg_installed/x64-windows/debug/bin;${env:PATH}" }
       ]
     }
   ]

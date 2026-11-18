@@ -1,31 +1,26 @@
 #include <QApplication>
-#include <QLabel>
-#include <QApplication>    
-#include <QThread>          
-#include <QSystemTrayIcon>  
-#include <QMenu>            
-#include <windows.h>       
-#include <tlhelp32.h>
+#include <QMainWindow>
+#include <QTabWidget>
+#include <windows.h>
 
-// Windows.Graphics.Capture (modern WinRT capture API)
-#include <winrt/Windows.Graphics.Capture.h>
-#include <winrt/Windows.Graphics.DirectX.h>
-#include <winrt/Windows.Graphics.DirectX.Direct3D11.h>
-
-// Direct3D 11 (the GPU API WGC uses)
-#include <d3d11.h>
-#include <dxgi1_2.h>
-
+#include "clips/clip_browser.h"
 
 int main(int argc, char* argv[])
 {
     QApplication app(argc, argv);
-    QLabel label("Hello World!- testing phase 0 completed");
+    QApplication::setApplicationName("Framewatch");   // names the AppData\Roaming\Framewatch folder
 
-    label.setWindowTitle("Framewatch");
-    label.resize(1280, 720);
-    label.setAlignment(Qt::AlignCenter);
-    
-    label.show();
+    CoInitializeEx(nullptr, COINIT_APARTMENTTHREADED);
+
+    QMainWindow window;
+    window.setWindowTitle("Framewatch");
+    window.resize(1280, 720);
+
+    auto* tabs = new QTabWidget;
+    tabs->addTab(new ClipBrowser, "Clips");
+    // Later: tabs->addTab(new Recorder, "Record");
+    window.setCentralWidget(tabs);
+
+    window.show();
     return app.exec();
 }

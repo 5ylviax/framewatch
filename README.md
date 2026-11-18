@@ -1,13 +1,15 @@
 # Framewatch
-Game clip recorder for Windows. Rolling buffer, automatic highlight detection, zero ads, zero cloud. Apex Legends supported, more games planned.
+
+Review and clean up your game clips fast. Framewatch finds every clip in your
+Videos folder so you can flip through them with the arrow keys and delete the
+ones you don't want, without opening and closing each video.
+
+In the future, Framewatch will also clip your games for you: a rolling replay
+buffer with automatic highlight detection, starting with Apex Legends and more
+games after. Zero ads. 
 
 ## Run
-
-After building, launch the exe any of these ways:
-
-- **F5** in VS Code (runs with debugger attached)
-- Double-click `build\debug\Framewatch.exe` in File Explorer
-- From the terminal:
+From the terminal:
     ```bash 
     C:\dev\framewatch\build\debug\Framewatch.exe
     ```
@@ -17,8 +19,8 @@ After building, launch the exe any of these ways:
 | Layer            | Tool                                      |
 |------------------|-------------------------------------------|
 | Language         | C++20                                     |
-| Compiler         | MSVC (Visual Studio 2026)                 |
-| UI framework     | Qt 6.8.3 (Widgets)                        |
+| Compiler         | MSVC               |
+| UI framework     | Qt 6.12.0 (Widgets, Multimedia)           |
 | Build system     | CMake 4.3                                 |
 | Package manager  | vcpkg                                     |
 | Capture API      | Windows.Graphics.Capture                  |

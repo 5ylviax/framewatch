@@ -7,7 +7,7 @@
 ### vcpkg
 - https://learn.microsoft.com/en-us/vcpkg/
 
-### Qt 6.8.3 (Widgets)
+### Qt 6.12.0 (Widgets, Multimedia)
 - https://doc.qt.io/qt-6/
 
 ### C++20 

@@ -44,17 +44,11 @@ Thumbs.db
 Desktop.ini
 .DS_Store
 
-# Project-specific (Framewatch)
-clips/
-recordings/
-*.mp4
-*.mkv
-*.avi
-*.ts
-
 # Logs
 logs/
 *.log
 
 NOTES.md
 BUILD.md
+
+
