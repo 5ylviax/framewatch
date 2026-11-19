@@ -1,5 +1,6 @@
 cmake_minimum_required(VERSION 3.24)
 project(Framewatch LANGUAGES CXX)
+include(GNUInstallDirs)   # after project(): it needs the compiler and architecture to pick install paths
 
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
